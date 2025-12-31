@@ -54,7 +54,7 @@ const Hero = () => {
         </a>
 
         {/* LinkedIn */}
-        <a href="linkedin.com/in/jasiel-solís-garcía-a163a53a2" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
+        <a href="https://www.linkedin.com/in/jasiel-solís-garcía-a163a53a2/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
           <Linkedin size={24} />
         </a>
 

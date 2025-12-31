@@ -24,7 +24,7 @@ const Contact = () => {
 
           {/* LinkedIn */}
           <a
-            href="linkedin.com/in/jasiel-solís-garcía-a163a53a2" 
+            href="https://www.linkedin.com/in/jasiel-solís-garcía-a163a53a2/" 
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-50 transition dark:border-gray-300 dark:text-gray-300 dark:hover:bg-gray-800"
