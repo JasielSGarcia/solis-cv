@@ -4,7 +4,6 @@ import photomint from '../assets/img/mint.png';
 import phototopia from '../assets/img/topia.png';
 import photoumai from '../assets/img/umai.png'
 import photowowi from "../assets/img/wowi.png"
-import demoVideo from '../assets/video/demo.mp4';
 
 // Datos de proyectos
 const allProjects = [
@@ -87,17 +86,18 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Video principal*/}
+        {/* Video */}
         {activeFilter === 'Video' && (
           <div className="mb-12">
             <div className="relative w-full overflow-hidden rounded-2xl shadow-lg" style={{ paddingTop: '56.25%' }}>
-              <video
-                className="absolute top-0 left-0 w-full h-full object-cover"
-                controls
-                src={demoVideo}
-              >
-                Tu navegador no soporta la reproducción de video.
-              </video>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/watch?v=RjwFWlLBSGM"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
             <div className="p-6 bg-white dark:bg-gray-800 rounded-b-2xl">
               <h4 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Demo de Desarrollo</h4>
