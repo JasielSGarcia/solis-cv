@@ -15,7 +15,7 @@ const ProjectCard = ({ title, imageUrl, repoLink, demoLink }: ProjectCardProps) 
     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
       {/* Imagen del Proyecto */}
       <div className="relative w-full h-48 sm:h-56 bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
-        {/* Usamos object-cover para que la imagen ocupe todo el espacio y se recorte si es necesario */}
+        {/* Usa object-cover para que la imagen ocupe todo el espacio y se recorte si es necesario */}
         <img 
           src={imageUrl} 
           alt={`Captura de pantalla de ${title}`} 

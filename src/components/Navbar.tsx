@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Esta es la barra de navegación principal */}
+      {/* Barra de navegación principal */}
       <nav className="fixed top-0 left-0 w-full z-50 py-4 bg-white/80 backdrop-blur-md dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           

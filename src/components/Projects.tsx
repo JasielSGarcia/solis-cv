@@ -4,6 +4,8 @@ import photomint from '../assets/img/mint.png';
 import phototopia from '../assets/img/topia.png';
 import photoumai from '../assets/img/umai.png'
 import photowowi from "../assets/img/wowi.png"
+import demoVideo from '../assets/video/demo.mp4';
+
 // Datos de proyectos
 const allProjects = [
   {
@@ -47,7 +49,7 @@ type ProjectCategory = 'All' | 'Video' | 'Web' | 'App' | 'Design';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>('All');
 
-  // Filtramos los proyectos basados en el filtro activo
+  // Filtra los proyectos basados en el filtro activo
   const filteredProjects = activeFilter === 'All'
     ? allProjects
     : allProjects.filter(project => project.category === activeFilter);
@@ -85,18 +87,17 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Video principal (si aún lo quieres) */}
+        {/* Video principal*/}
         {activeFilter === 'Video' && (
           <div className="mb-12">
             <div className="relative w-full overflow-hidden rounded-2xl shadow-lg" style={{ paddingTop: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/lEpwxHhUJMg?si=cywywxz3KKc1Xdvo"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              <video
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                controls
+                src={demoVideo}
+              >
+                Tu navegador no soporta la reproducción de video.
+              </video>
             </div>
             <div className="p-6 bg-white dark:bg-gray-800 rounded-b-2xl">
               <h4 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Demo de Desarrollo</h4>
@@ -110,7 +111,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
             <ProjectCard
-              key={index} // Mejor usar un ID único si lo tuvieras
+              key={index}
               title={project.title}
               description={project.description}
               imageUrl={project.imageUrl}

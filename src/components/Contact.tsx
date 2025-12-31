@@ -1,4 +1,4 @@
-import { Github, Instagram, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -11,6 +11,7 @@ const Contact = () => {
           ¿Tienes un proyecto en mente? Me encantaría saber más sobre él y cómo puedo ayudarte.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
+          {/* GitHub*/}
           <a
             href="https://github.com/JasielSGarcia"
             target="_blank"
@@ -20,15 +21,19 @@ const Contact = () => {
             <Github className="w-5 h-5" />
             GitHub
           </a>
+
+          {/* LinkedIn */}
           <a
-            href="https://www.instagram.com/eljaso.zip"
+            href="linkedin.com/in/jasiel-solís-garcía-a163a53a2" 
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-50 transition dark:border-gray-300 dark:text-gray-300 dark:hover:bg-gray-800"
           >
-            <Instagram className="w-5 h-5" />
-            Instagram
+            <Linkedin className="w-5 h-5" />
+            LinkedIn
           </a>
+
+          {/* Email*/}
           <a
             href="mailto:jasielsolisgarcia08@gmail.com"
             className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition dark:bg-blue-600 dark:hover:bg-blue-500"

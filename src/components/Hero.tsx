@@ -1,6 +1,7 @@
-import { Github, Instagram, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { ArrowDown } from 'lucide-react';
 import photo from '../assets/img/photo.png'
+
 const Hero = () => {
   return (
     <section id="inicio" className="pt-32 pb-32 px-6 relative min-h-screen flex items-center">
@@ -45,13 +46,19 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Contactos */}
       <div className="hidden md:flex flex-col gap-6 absolute left-6 lg:left-12 top-1/2 -translate-y-1/2">
+        {/* GitHub */}
         <a href="https://github.com/JasielSGarcia" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
           <Github size={24} />
         </a>
-        <a href="https://www.instagram.com/eljaso.zip" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
-          <Instagram size={24} />
+
+        {/* LinkedIn */}
+        <a href="linkedin.com/in/jasiel-solís-garcía-a163a53a2" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
+          <Linkedin size={24} />
         </a>
+
+        {/* Email */}
         <a href="mailto:jasielsolisgarcia08@gmail.com" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
           <Mail size={24} />
         </a>

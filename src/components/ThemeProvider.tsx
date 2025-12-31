@@ -1,17 +1,17 @@
 import React, { createContext, useContext, useEffect, useState }from 'react';
 
-// Definimos el tipo de valor del contexto
+// Definie el tipo de valor del contexto
 type ThemeContextType = {
   theme: string;
   toggleTheme: () => void;
 };
 
-// Creamos el contexto con un valor inicial undefined
+// Contexto con un valor inicial undefined
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState(() => {
-    // Leemos el tema del localStorage o default a 'light'
+    // Lee el tema del localStorage o default a 'light'
     return localStorage.getItem('theme') || 'light';
   });
 
@@ -22,7 +22,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     } else {
       root.classList.remove('dark');
     }
-    // Guardamos la preferencia en localStorage
+    // Guarda la preferencia en localStorage
     localStorage.setItem('theme', theme);
   }, [theme]);
 

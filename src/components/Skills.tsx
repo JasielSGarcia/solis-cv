@@ -1,6 +1,6 @@
 import SkillItem from './SkillItem';
 
-// Definimos tus habilidades aquí para que sea más fácil de editar
+// Habilidades
 const frontendSkills = [
   { name: "React", level: "Intermedio / Avanzado" },
   { name: "JavaScript", level: "Intermedio" },
