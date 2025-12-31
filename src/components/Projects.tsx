@@ -92,7 +92,8 @@ const Projects = () => {
             <div className="relative w-full overflow-hidden rounded-2xl shadow-lg" style={{ paddingTop: '56.25%' }}>
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/watch?v=RjwFWlLBSGM"
+                // CAMBIO AQUÍ: Usar "embed" en lugar de "watch?v="
+                src="https://www.youtube.com/embed/RjwFWlLBSGM" 
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -105,7 +106,6 @@ const Projects = () => {
             </div>
           </div>
         )}
-
 
         {/* Grid de proyectos filtrados */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
